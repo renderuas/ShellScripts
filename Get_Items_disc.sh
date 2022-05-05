@@ -1,6 +1,6 @@
 #!/bin/bash
 LOGPATH=/var/tmp
-ARRAYDAYS=($(awk -F: '{print $2}' $LOGPATH/zabbix_server.log|sort|uniq))
+#ARRAYDAYS=($(awk -F: '{print $2}' $LOGPATH/zabbix_server.log|sort|uniq))
 ARRAYDAYS=(20220505)
 #ARRAYSYS=($( awk -F\" '/connection restored/ {print $2}' zabbix_server.log | sort |uniq -c | sort -n -r|head -n 10))
 
