@@ -1,4 +1,12 @@
 import json
+import os
+
+file_path = 'user.json'
+
+if os.path.exists(file_path):
+  print('El fichero existe')
+else:
+  print('El fichero no existe')
 
 with open('user.json') as user_file:
   file_contents = user_file.read()
